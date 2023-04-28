@@ -1,44 +1,43 @@
-import styled from '@emotion/styled'
-
+import styled from '@emotion/styled';
 
 export const CardFriendList = styled.ul`
-    width: 350px;
-    
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0;
-    margin-bottom:50px;
-    
-    box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.16);
+  width: 350px;
 
-    list-style: none;  
-`
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  margin-bottom: 50px;
+
+  box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.16);
+
+  list-style: none;
+`;
 export const CardItem = styled.li`
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 5px;
-    
-   `
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+`;
 export const Cardame = styled.p`
-    font-size: 25px;
-    margin: 0 0 0 40px;
-   `
+  font-size: 25px;
+  margin: 0 0 0 40px;
+`;
 export const CardAvatar = styled.img`
-    background-color: gray;
-    border-radius: 30%;
-    margin-left: 20px;
-   `
+  background-color: gray;
+  border-radius: 30%;
+  margin-left: 20px;
+`;
 export const CardStatus = styled.span`
-    margin-left: 20px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+  margin-left: 20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 
-    background-color: ${ props => {
+  background-color: ${props => {
     if (props.isOnline === true) {
-            return 'green'; 
-        } return 'red'
-    }};
-   `
+      return 'green';
+    }
+    return 'red';
+  }};
+`;

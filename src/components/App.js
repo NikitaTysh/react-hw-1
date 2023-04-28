@@ -1,35 +1,28 @@
-import profile from "../user.json"
-import {ProfileFunc} from './Profile/Profile'
-import data from    '../data.json'
- import {StatisticsFunc} from './Stats/Stats'
- import { FriendList } from './FriendsList/FriendList'
-import friends from '../friends.json'
-import transactions from "../transactions.json"
+import { ProfileFunc } from './Profile/Profile';
+import { StatisticsFunc } from './Stats/Stats';
+import { FriendList } from './FriendsList/FriendList';
+import { TransactionHistory } from './Table/Table.js';
 
-import { TransactionHistory } from './Table/Table.js'
+import profile from './data/user.json';
+import data from '../data/data.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
 
-
-export const App = () =>{
-return (
+export const App = () => {
+  return (
     <div>
-
-    
-<ProfileFunc username={profile.username} tag={profile.tag}
-    location={profile.location} avatar={profile.avatar}
-    stats={profile.stats}
-    />
-    <StatisticsFunc
-    title={data.title}
-    stats={data}
-  />
-
-  <FriendList friends={friends} />
-
-  <TransactionHistory
-        items={transactions}
+      <ProfileFunc
+        username={profile.username}
+        tag={profile.tag}
+        location={profile.location}
+        avatar={profile.avatar}
+        stats={profile.stats}
       />
+      <StatisticsFunc title={data.title} stats={data} />
 
-  </div>)
+      <FriendList friends={friends} />
 
-
-}
+      <TransactionHistory items={transactions} />
+    </div>
+  );
+};
