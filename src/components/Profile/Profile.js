@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   Profile,
   PrDesctirpion,
@@ -37,7 +38,7 @@ export function ProfileFunc({ username, avatar, tag, location, stats }) {
   );
 }
 
-        ProfileFunc.PropTypes = {
+        ProfileFunc.propTypes = {
         username: PropTypes.string,
          avatar: PropTypes.string,
          tag: PropTypes.string,

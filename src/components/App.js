@@ -3,7 +3,7 @@ import { StatisticsFunc } from './Stats/Stats';
 import { FriendList } from './FriendsList/FriendList';
 import { TransactionHistory } from './Table/Table.js';
 
-import profile from './data/user.json';
+import profile from '../data/user.json';
 import data from '../data/data.json';
 import friends from '../data/friends.json';
 import transactions from '../data/transactions.json';
